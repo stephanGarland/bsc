@@ -1,0 +1,11 @@
+{
+"version": "0.0.1",
+"tasks": [
+    {
+    "label": "Sass Compile",
+    "type": "shell",
+    "command": "node-sass src/scss/styles.scss src/css/styles.css",
+    "group": "build"
+    }
+]
+  }
