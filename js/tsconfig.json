@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["ES6", "DOM"],
+    "module": "CommonJS",
+    "preserveConstEnums": true,
+    "target":"ES6",
+    "skipLibCheck": true,
+    "watch": true
+  },
+  "files": [
+    "waterCalc.ts"
+  ],
+  "exclude": [
+    "node_modules/"
+  ]
+}

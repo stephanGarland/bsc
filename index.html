@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -15,20 +15,154 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <form class="ui form">
+    <div class="ui three column grid container">
+      <div class="column">
+        <div class="ui one column grid container">
+          <p><h3>Water</h3></p>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="mashWater" placeholder="Mash Water (gal)">
+              <div class="ui basic label">
+                H2O
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="spargeWater" placeholder="Sparge Water (gal)">
+              <div class="ui basic label">
+                H2O
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui one column grid container">
+          <p><h3>Additions</h3></p>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputCaco" placeholder="Calcium Carbonate (g)">
+              <div class="ui basic label">
+                CaCO3
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputCacl" placeholder="Calcium Chloride (g)">
+              <div class="ui basic label">
+                CaCl
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputCaoh" placeholder="Calcium Hydroxide (g)">
+              <div class="ui basic label">
+                Ca(OH)2
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputCaso" placeholder="Calcium Sulfate (g)">
+              <div class="ui basic label">
+                CaSO4
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputMgcl" placeholder="Magnesium Chloride (g)">
+              <div class="ui basic label">
+                MgCl2
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputMgso" placeholder="Magnesium Sulfate (g)">
+              <div class="ui basic label">
+                MgSO4
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputNahco" placeholder="Sodium Bicarbonate (g)">
+              <div class="ui basic label">
+                NaHCO3
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui right labeled input">
+              <input type="number" id="inputNacl" placeholder="Sodium Chloride (g)">
+              <div class="ui basic label">
+                NaCl
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui one column grid container">
+          <p>
+          <h3>Resultant Concentration</h3>
+          </p>
+          <div class="column">
+            <div class="slider">
+              <p><div class="ui basic label" for="range_weight">HCO3 (ppm)</div>
+              <input type="range" class="slider" min="0" max="1000" step="5" value="0">
+                <span class="slider_label"></span></p>
+            </div>        
+          </div>
+          <div class="column">
+            <div class="slider">
+              <p><div class="ui basic label" for="range_weight">Ca (ppm)</div>
+              <input type="range" class="slider" min="0" max="300" step="1" value="0">
+              <span class="slider_label"></span></p>
+            </div>
+          </div>
+            <div class="column">
+              <div class="slider">
+                <p><div class="ui basic label" for="range_weight">Cl (ppm)</div>
+                <input type="range" class="slider" min="0" max="300" step="1" value="0">
+                <span class="slider_label"></span></p>
+              </div>
+            </div>
+          <div class="column">
+            <div class="slider">
+              <p><div class="ui basic label" for="range_weight">Mg (ppm)</div>
+              <input type="range" class="slider" min="0" max="200" step="1" value="0">
+              <span class="slider_label"></span></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="slider">
+              <p><div class="ui basic label" for="range_weight">Na (ppm)</div>
+              <input type="range" class="slider" min="0" max="200" step="1" value="0">
+              <span class="slider_label"></span></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="slider">
+              <p>
+              <div class="ui basic label" for="range_weight">SO4(-2) (ppm)</div>
+              <input type="range" class="slider" min="0" max="1000" step="5" value="0">
+              <span class="slider_label"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -36,6 +170,13 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/vendor/semantic-2.8.7.min.js"></script>
+  <script src="js/vendor/typescript-4.0.5.min.js"></script>
+  <script src="js/waterCalc.js"></script>
 </body>
 
 </html>
